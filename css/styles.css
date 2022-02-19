@@ -1,0 +1,69 @@
+.list {
+  list-style: none;
+}
+.link {
+  text-decoration: none;
+}
+:root {
+  --lighte-theme-text-color: #555555;
+  --second-text-color: #ffffff;
+  --lighte-h-text-color: #303030;
+  --dark-theme-text-color: #9da4bd;
+  --accent-color: #ff6c00;
+}
+
+/* header */
+.navigation-link {
+  font-family: Open Sans, sans-serif;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 1.3;
+  /* color: var(--second-text-color); */
+}
+.navigation-link:hover,
+.navigation-link:focus {
+  color: var(--accent-color);
+}
+.contact-telephon-link {
+  /* color: var(--second-text-color); */
+}
+.contact-telephon-link:hover,
+.contact-telephon-link:focus {
+  color: var(--accent-color);
+}
+.social-item,
+.youtube-link {
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 11px;
+  line-height: 1.4;
+  color: var(--lighte-h-text-color);
+}
+.social-item:hover,
+.social-item:focus {
+  color: var(--accent-color);
+}
+.youtube-link:hover,
+.youtube-linkfocus {
+  color: var(--accent-color);
+}
+.modal-button {
+  width: 120px;
+  font-family: Open Sans;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+  border: 1px solid #ff6c00;
+  box-sizing: border-box;
+  border-radius: 25px;
+}
+.modal-button:hover,
+.modal-button:focus {
+  background-color: var(--accent-color);
+}

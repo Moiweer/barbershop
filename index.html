@@ -5,31 +5,35 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Barbershop</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&family=Raleway:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/styles.css">
   </head>
   <body>
-    <header>
-      <a href="/">
-        <img src="./img/Logo.svg" alt="Логотип сайта" />
+    <header class="header">
+      <a href="/" class="logo-link">
+        <img src="./img/Logo.svg logo-img" alt="Логотип сайта" />
       </a>
-      <nav>
-        <ul>
-          <li><a href="#about">О нас</a></li>
-          <li><a href="#prices">Услуги и контакты</a></li>
-          <li><a href="#masters">Мастера</a></li>
-          <li><a href="#contacts">Контакты</a></li>
+      <nav class="navigation">
+        <ul class="navigation-list list">
+          <li class="navigation-item"><a class="navigation-link link" href="#about">О нас</a></li>
+          <li class="navigation-item"><a class="navigation-link link" href="#prices">Услуги и контакты</a></li>
+          <li class="navigation-item"><a class="navigation-link link" href="#masters">Мастера</a></li>
+          <li class="navigation-item"><a class="navigation-link link" href="#contacts">Контакты</a></li>
         </ul>
       </nav>
-      <ul>
-        <li><a href="tel:+380441111111">+38 044 111 11 11</a></li>
-        <li><button type="button">онлайн запись</button></li>
+      <ul class="contacts list">
+        <li class="contact-telephon"><a class="contact-telephon-link link" href="tel:+380441111111">+38 044 111 11 11</a></li>
+        <li><button class="modal-button" type="button">онлайн запись</button></li>
       </ul>
     </header>
     <main>
       <section>
-        <ul>
-          <li><a href="" target="_blank"></a>Instagram</li>
-          <li>
-            <a href="" target="_blank" rel="noopener noreferrer">Youtube</a>
+        <ul class="social-list list">
+          <li class="social-item"><a class="instagram-link link" href="" target="_blank"></a>Instagram</li>
+          <li class="social-item">
+            <a class="youtube-link link"  href="" target="_blank" rel="noopener noreferrer">Youtube</a>
           </li>
         </ul>
         <p lang="en">A hair salon for men in Kyiv</p>
