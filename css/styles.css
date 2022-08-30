@@ -1,3 +1,7 @@
+body {
+font-family: var(--prymary-font-famaly);
+}
+
 .list {
   list-style: none;
 }
@@ -5,27 +9,57 @@
   text-decoration: none;
 }
 :root {
-  --lighte-theme-text-color: #555555;
-  --second-text-color: #ffffff;
-  --lighte-h-text-color: #303030;
+  --lighte-theme-second-text-color: #555555;
+  --white-text-color: #ffffff;
+  --lighte-text-color: #303030;
   --dark-theme-text-color: #9da4bd;
   --accent-color: #ff6c00;
+  --prymary-font-famaly: Open Sens;
+}
+h1, h2, h3, h4, h5, h6, p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+ul, ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+img {
+  display: block;
+}
+address {
+  font-style: normal;
+}
+.container {
+  width: 1200px;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin-right: auto;
+  margin-left: auto;
+}
+.section{
+  padding-top: 130px;
+  padding-bottom: 130px;
 }
 
-/* STARN COMPONENTS */
+/* START COMPONENTS */
 .modal-button {
-  width: 120px;
+  min-width: 160px;
+  padding: 12px 20px;
   font-family: Open Sans;
   font-weight: 600;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 1.33;
   letter-spacing: 0.09em;
   text-transform: uppercase;
+  cursor: pointer;
 
   color: #ffffff;
   border: 1px solid #ff6c00;
   box-sizing: border-box;
   border-radius: 25px;
+  background-color: transparent;
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -33,6 +67,7 @@
 }
 
 .over-title {
+  margin-bottom: 20px;
   font-family: Open Sans;
   font-weight: 600;
   font-size: 11px;
@@ -48,14 +83,45 @@
   letter-spacing: 0.02em;
 }
 .second-title {
+  
   font-family: Raleway;
   font-weight: bold;
   font-size: 42px;
   line-height: 1.2;
   letter-spacing: 0.05em;
 }
+.title-theme-dark{
+  color: var(--dark-theme-text-color)
+}
+.title-theme-lighte {
+  color: var(--lighte-text-color)
+}
 /* END COMPONENTS */
 /* header */
+.header-container {
+  display: flex;
+  align-items: center;
+ 
+}
+.header{
+  padding-top: 32px;
+  padding-bottom: 32px;
+}
+.logo {
+  margin-right: 70px;
+}
+.navigation {
+  display: flex;
+  align-items: center;
+}
+.navigation-list {
+  display: flex;
+  align-items: center;
+}
+.navigation-item:not(:last-child) {
+  margin-right: 40px;
+}
+
 .navigation-link {
   font-family: Open Sans, sans-serif;
   font-weight: 600;
@@ -66,6 +132,10 @@
 .navigation-link:hover,
 .navigation-link:focus {
   color: var(--accent-color);
+}
+.contact-telephon-link{
+  margin-left: auto;
+  margin-right: 40px;
 }
 .contact-telephon-link {
   /* color: var(--second-text-color); */
@@ -90,4 +160,14 @@
 .youtube-link:hover,
 .youtube-linkfocus {
   color: var(--accent-color);
+}
+
+/* MASTERS SECTION------ */
+.masers-section{
+  background-color: #F7F7F7;
+}
+
+/* FOOTER------------------- */
+.footer{
+  background-color: rgb(10, 9, 9, 0.6);
 }
