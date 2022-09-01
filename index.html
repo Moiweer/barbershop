@@ -40,9 +40,9 @@
             <a class="youtube-link link"  href="" target="_blank" rel="noopener noreferrer">Youtube</a>
           </li>
         </ul>
-        <p class="over-title" lang="en">A hair salon for men in Kyiv</p>
+        <p class="over-title title-theme-dark" lang="en">A hair salon for men in Kyiv</p>
         <h1 class="main-title" lang="en">BarberShop</h1>
-        <p class="description">
+        <p class="description title-theme-dark">
           Мы эксперты в модных мужских стрижках. <br />
           Работаем быстро, осторожно и со вкусом
         </p>
@@ -51,8 +51,9 @@
       <!-- ABOUT US SECTION--------------------------------- -->
       <section class="about section" id="about">
         <div class="container">
-        <ul class="list">
-          <li>
+          <div class="flex-about">
+        <ul class="about-img list">
+          <li class="about-img-item">
             <img
               src="./img/img1.jpg"
               width="270"
@@ -60,7 +61,7 @@
               alt="стрижка бороды"
             />
           </li>
-          <li>
+          <li class="about-img-item">
             <img
               src="./img/img2.jpg"
               width="270"
@@ -69,13 +70,14 @@
             />
           </li>
         </ul>
-        <p clacc="over-title title-theme-lighte">О нас</p>
+        <div class="about-content">
+        <p class="over-title title-theme-lighte">О нас</p>
         <h2 class="second-title title-theme-lighte">Лучший Барбершоп твоего города</h2>
         <p class="description">
           Если ты хочешь добавить в свой образ больше уверенности – тебе точно к
           нам.
         </p>
-        <p>
+        <p class="second-description">
           Мы команда, которая никогда не останавливается на достигнутом и жаждет
           перемен. И когда ты попадешь в руки нашего мастера, то уже никогда не
           сможешь быть прежним. Мы команда, которая всегда с клиентами "на одной
@@ -83,6 +85,8 @@
           приходит!
         </p>
         <button class="modal-button title-theme-lighte" type="button">онлайн запись</button>
+        </div>
+        </div>
         </div>
       </section>
       <!-- SERVICES SECTION -------------- -->
@@ -176,7 +180,7 @@
           <div class="container">
           <p class="over-title title-theme-lighte">На латинском языке "Барба" означает "Борода" </p>
           <h2 hidden>Галерея</h2>
-          <ul class="list">
+          <ul class="gallery list">
             <li> <img src="./img/Rectangle25.jpg" alt="Барбер выполняет стрижку" width="270" height="360" > </li>
             <li> <img src="./img/Rectangle26.jpg" alt="Барбер бреет бороду" width="270" height="360" > </li>
             <li> <img src="./img/Rectangle27.jpg" alt="Барбер готовит клиента к стрижке бороды" width="270" height="360" > </li>
