@@ -13,7 +13,7 @@
   </head>
   <body>
     <header class="header">
-      <div class="container header-container">
+      <div class="header-container container">
       <nav class="navigation">
         <a href="/" class="logo link">
         <img src="./img/Logo.svg" alt="Логотип сайта" />
@@ -32,21 +32,24 @@
     </header>
     <main>
       <!-- HERO SECTION-------------------------------------- -->
-      <section class="hero">
-        <div class="container">
+      <section class="hero-container">
+        <div class="hero-left-side">
         <ul class="social-list list">
           <li class="social-item"><a class="instagram-link link" href="" target="_blank"></a>Instagram</li>
           <li class="social-item">
             <a class="youtube-link link"  href="" target="_blank" rel="noopener noreferrer">Youtube</a>
           </li>
         </ul>
+      </div>
+        <div class="hero-right-side">
         <p class="over-title title-theme-dark" lang="en">A hair salon for men in Kyiv</p>
         <h1 class="main-title" lang="en">BarberShop</h1>
         <p class="description title-theme-dark">
           Мы эксперты в модных мужских стрижках. <br />
           Работаем быстро, осторожно и со вкусом
         </p>
-       </div>
+        </div>
+      
       </section>
       <!-- ABOUT US SECTION--------------------------------- -->
       <section class="about section" id="about">
@@ -133,43 +136,80 @@
       </section>
       <!-- ADVANTAGES SECTION--------------------------------------- -->
       <section class="advantages section">
-        <div class="container"></div>
-        <ul class="list">
-          <li><span>600</span>
+        <div class="container advantages-container">
+          <div class="advantages-righte-side">
+        <ul class="advantages-righte-side-list list">
+          <li class="advantages-righte-side-item"><span class="advantages-number">600</span>
           <p>Довольных клиентов в день</p></li>
-          <li><span>50</span>
+          <li class="advantages-righte-side-item"><span class="advantages-number">50</span>
           <p>Наград за отличный сервис</p></li>
-          <li><span>20</span>
+          <li class="advantages-righte-side-item"><span class="advantages-number">20</span>
           <p>Лучших мастеров Киева</p></li>
-          <li><span>100</span>
+          <li class="advantages-righte-side-item"><span class="advantages-number">100</span>
           <p>Подарков постоянным клиентам</p></li>
         </ul>
+        </div>
+        <div class="advantages-righte-side">
         <p class="over-title title-theme-lighte">старая традиционная школа</p>
-        <h2 class="second-title title-theme-lighte">Почему приходят именно к нам?</h2>
+        <h2 class="second-title title-theme-lighte">Почему приходят <br> именно к нам?</h2>
         <p class="description">О нас говорят только хорошее. Но лучше 1 раз увидеть и прочувствовать, чем 10 раз прочитать. </p>
+        </div>
         </div>
       </section>
       <!-- MASTERS SECTION ---------------------------------------- -->
         <section class="masers-section section" id="masters">
-          <div class="container">
+          <div class="">
           <p class="over-title title-theme-lighte">Для настоящих ценителей атмосферы</p>
           <h2 class="second-title title-theme-lighte">Наши мастера</h2>
-          <ul class="list">
-             <li>
+          <ul class="master-cards list">
+             <li class="master-card-item">
                <img src="./img/img3.jpg" alt="барбер стрижет клиента" width="370" height="346">
-               <h3 lang="en">John Smith</h3>
+               <div class="masters-title">
+               <h3 class="masters-name" lang="en">John Smith</h3>
                <p lang="en">Extreme Barber</p>
+               <ul class="social-tools list">
+                <li class="social-tools-item">
+                  <a href="/" class="social-tools-link">
+                    <svg class="social-tools-icon" width="20px" height="20px">
+                    <use href=""> </use>
+                    </svg>
+                  </a>
+                </li>
+               </ul>
+               </div>
              </li>
 
-              <li>
+              <li class="master-card-item">
                <img src="./img/img4.jpg" alt="барбер стрижет клиента" width="370" height="346">
-               <h3 lang="en">Michele Doe</h3>
+               <div class="masters-title">
+               <h3 class="masters-name" lang="en">Michele Doe</h3>
                <p lang="en">Extreme Barber</p>
+               <ul class="social-tools list">
+                <li class="social-tools-item">
+                  <a href="/" class="social-tools-link">
+                    <svg class="social-tools-icon" width="20px" height="20px">
+                    <use href=""> </use>
+                    </svg>
+                  </a>
+                </li>
+               </ul>
+               </div>
              </li>
-              <li>
+              <li class="master-card-item">
                <img src="./img/img5.jpg" alt="барбер стрижет клиента" width="370" height="346">
-               <h3 lang="en">Alan Black</h3>
+              <div class="masters-title">
+               <h3 class="masters-name" lang="en">Alan Black</h3>
                <p lang="en">Extreme Barber</p>
+               <ul class="social-tools list list">
+                <li class="social-tools-item">
+                  <a href="/" class="social-tools-link">
+                    <svg class="social-tools-icon" width="20px" height="20px">
+                    <use href=""> </use>
+                    </svg>
+                  </a>
+                </li>
+               </ul>
+               </div>
               </li>
 
           </ul>
@@ -180,7 +220,7 @@
           <div class="container">
           <p class="over-title title-theme-lighte">На латинском языке "Барба" означает "Борода" </p>
           <h2 hidden>Галерея</h2>
-          <ul class="gallery list">
+          <ul class="gallery-list list">
             <li> <img src="./img/Rectangle25.jpg" alt="Барбер выполняет стрижку" width="270" height="360" > </li>
             <li> <img src="./img/Rectangle26.jpg" alt="Барбер бреет бороду" width="270" height="360" > </li>
             <li> <img src="./img/Rectangle27.jpg" alt="Барбер готовит клиента к стрижке бороды" width="270" height="360" > </li>
@@ -192,15 +232,15 @@
       <!-- FOOTER-------------------------------------- -->
         <footer class="footer">
           <div class="section">
-          <h2 class="second-title ">Онлайн-запись</h2>
+          <h2 class="second-title second-title-white">Онлайн-запись</h2>
           <ul class="form-list">
             <li class="form-list-item title-theme-dark">Имя<sup>*</sup></li>
             <li class="form-list-item title-theme-dark">телефон<sup>*</sup></li>
             <li class="form-list-item title-theme-dark">Сообщение</li>
           </ul>
+       <button class="modal-button" type="button">онлайн запись</button>
        
-       
-          <h2 class="second-title">Контакты</h2>
+          <h2 class="second-title second-title-white">Контакты</h2>
           <address>
             <ul class="list link">
               <li><a class="link title-theme-dark" href="https://goo.gl/maps/yc6vWJQwecACQs8e8" target="_blank" rel="noopener noreferrer">ул. Васильковая, 7А
@@ -209,17 +249,17 @@
               <li><a class="link title-theme-dark" href="mailto:barbershop@gmail.com">barbershop@gmail.com</a></li>
             </ul>
           </address>
-          <b>время работы</b>
+          <b class="title-theme-dark">время работы</b>
           <p class="title-theme-dark">Ежедневно с 9:00 до 22:00</p>
        
     </div>
   
       <p class="title-theme-dark">&copy; Copyrighte 2020</p>
       <ul class="list">
-        <li>   <a class="link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
+        <li class="">   <a class="social-item link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
 
         </li>
-        <li><a class="link" href="" target="_blank" rel="noopener noreferrer">Youtube</a></a>
+        <li class=""><a class=" social-item link" href="" target="_blank" rel="noopener noreferrer">Youtube</a></a>
 
         </li>
       </ul>
