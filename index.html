@@ -95,8 +95,10 @@
       <!-- SERVICES SECTION -------------- -->
       <section class="services section" id="prices"> 
         <p class="over-title title-theme-dark">Проведи время в компании лучших мастеров</p>
-        <h2>Услуги и цены</h2>
-        <ul class=" list">
+        <h2 class="servises-title">Услуги и цены</h2>
+        <div class="price-container">
+        <div class="price-righte-side">
+        <ul class="price-list list">
           <li class="price-list-item">
             <p class="price-list-text title-theme-dark">Мужская стрижка</p>
             <p class="price-list-value title-theme-dark">от 300 грн.</p>
@@ -107,32 +109,36 @@
           </li>
           <li class="price-list-item">
             <p class="price-list-text title-theme-dark">Стрижка усов</p>
-            <p class="price-list-value">от 200 грн.</p>
+            <p class="price-list-value title-theme-dark">от 200 грн.</p>
           </li>
           <li class="price-list-item">
-            <p class="price-list-text">Бритье опасной бритвой</p>
-            <p class="price-list-value">от 200 грн.</p>
+            <p class="price-list-text title-theme-dark">Бритье опасной бритвой</p>
+            <p class="price-list-value title-theme-dark">от 200 грн.</p>
           </li>
         </ul>
+        </div>
+        <div class="price-left-side">
         <ul class="list">
-          <li class="price-list-item">
+          <li class="price-list-item title-theme-dark">
             <p class="price-list-text">Cтрижка у стажера</p>
             <p class="price-list-value">от 50 грн.</p>
           </li>
-         <li class="price-list-item">
+         <li class="price-list-item title-theme-dark">
             <p class="price-list-text">Стрижка под насадку</p>
             <p class="price-list-value">от 200 грн.</p>
           </li>
-          <li class="price-list-item">
+          <li class="price-list-item title-theme-dark">
             <p class="price-list-text">Детская стрижка (до 12 лет)</p>
             <p class="price-list-value">от 300 грн.</p>
           </li>
-          <li class="price-list-item">
+          <li class="price-list-item title-theme-dark">
             <p class="price-list-text">Камуфлирование седины</p>
             <p class="price-list-value">от 200 грн.</p>
           </li>
         </ul>
-        <button class="modal-button" type="button">онлайн запись</button>
+        </div>
+        </div>
+        <button class="modal-button services-modal-button" type="button">онлайн запись</button>
       </section>
       <!-- ADVANTAGES SECTION--------------------------------------- -->
       <section class="advantages section">
@@ -158,7 +164,7 @@
       </section>
       <!-- MASTERS SECTION ---------------------------------------- -->
         <section class="masers-section section" id="masters">
-          <div class="">
+          <div class="container">
           <p class="over-title title-theme-lighte">Для настоящих ценителей атмосферы</p>
           <h2 class="second-title title-theme-lighte">Наши мастера</h2>
           <ul class="master-cards list">
@@ -231,7 +237,8 @@
 </main>
       <!-- FOOTER-------------------------------------- -->
         <footer class="footer">
-          <div class="section">
+          <div class=" container footer-container">
+            <div class="form-footer section">
           <h2 class="second-title second-title-white">Онлайн-запись</h2>
           <ul class="form-list">
             <li class="form-list-item title-theme-dark">Имя<sup>*</sup></li>
@@ -239,21 +246,22 @@
             <li class="form-list-item title-theme-dark">Сообщение</li>
           </ul>
        <button class="modal-button" type="button">онлайн запись</button>
-       
+       </div>
+    <div class="section contact-footer">
           <h2 class="second-title second-title-white">Контакты</h2>
           <address>
-            <ul class="list link">
-              <li><a class="link title-theme-dark" href="https://goo.gl/maps/yc6vWJQwecACQs8e8" target="_blank" rel="noopener noreferrer">ул. Васильковая, 7А
+            <ul class="list link contact-footer-list">
+              <li class="contact-footer-item"><a class="link title-theme-dark" href="https://goo.gl/maps/yc6vWJQwecACQs8e8" target="_blank" rel="noopener noreferrer">ул. Васильковая, 7А <br>
 Киев, 08132</a></li>
-              <li><a class="link title-theme-dark" href="tel:+380441111111">tel:+380441111111</a></li>
+              <li class="contact-footer-item"><a class="link title-theme-dark" href="tel:+380441111111">tel:+380441111111</a></li>
               <li><a class="link title-theme-dark" href="mailto:barbershop@gmail.com">barbershop@gmail.com</a></li>
             </ul>
           </address>
-          <b class="title-theme-dark">время работы</b>
+          <b class="work-time">время работы</b>
           <p class="title-theme-dark">Ежедневно с 9:00 до 22:00</p>
-       
-    </div>
-  
+       </div>
+  </div>
+  <div class="second-footer">
       <p class="title-theme-dark">&copy; Copyrighte 2020</p>
       <ul class="list">
         <li class="">   <a class="social-item link" href="" target="_blank" rel="noopener noreferrer">Instagram</a>
@@ -263,7 +271,7 @@
 
         </li>
       </ul>
-  
+  </div>
     </footer>
   </body>
 </html>
