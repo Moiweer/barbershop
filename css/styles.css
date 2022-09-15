@@ -418,28 +418,76 @@ max-width: 130px;
 }
 /* FOOTER------------------- */
 .contact-forms{
-  /* display: flex; */
-
-  background: #191C26
+   background-color: #191C26;
 }
+
 .contact-forms-container {
   display: flex;
-  /* width: 50%; */
+
+ 
 }
 .contact-form {
-  background-image: url(../img/bg1.png);
-      background-size: cover;
-      background-repeat: no-repeat;
-     width: 50%; 
-     /* padding-left: 100px; */
+
+  width: 50%;
+margin-right: 40px;
 }
-.contact-footer-item {
+.form-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+ 
+  
+}
+.form-list-item {
+  outline: none;
+  background-color: #191C26;
+  width: 270px;
+  border: none;
+  border-bottom: 1px rgba(157, 164, 189, 0.4) solid;
+  margin-bottom: 44px;
+cursor: pointer;
+}
+
+.form-list-item:hover, 
+.form-list-item:focus {
+  color: var(--white-text-color);
+  border-bottom: 1px rgb(255, 255, 255) solid;
+}
+
+
+.textarea {
+  width: 100%;
+  resize: none;
+  outline: none;
+  border-bottom: 1px rgba(157, 164, 189, 0.4) solid;
+color: rgba(157, 164, 189, 0.4);
+}
+
+ textarea.textarea:hover{
+  color: #ffffff;
+}
+:hover::-webkit-input-placeholder {
+  color: var(--white-text-color);
+
+}
+
+.contact-footer{
+  background-color: #191C26;
+    background-image: url("../img/bg-price.png");
+    background-size: cover;
+     background-repeat: no-repeat;
+background-position: center;
+flex-grow: 1;
+padding-left: 104px;
+}
+.contact-footer-item, textarea {
   margin-bottom: 20px;
     font-weight: 400;
     font-size: 18px;
     line-height: 30px;
   
     letter-spacing: 0.02em;
+    
 }
 .work-time::before {
     content: "";
@@ -465,9 +513,10 @@ margin-bottom: 20px;
   color: var(--white-text-color);
 }
  
-.contact-forms-container {
+
+/* .contact-forms-container {
   margin-bottom: 66px;
-}
+} */
 
 
 .second-footer {
