@@ -183,14 +183,42 @@ flex-grow:1;
     letter-spacing: 0.05em;
     color: var(--white-text-color);
 }
-
+/* INSTAGRAMM, Youtube-------------------- */
 .social-list {
   display: flex;
+
 }
 .social-list-rotate {
-  /* margin-bottom: -18px; */
+  
   transform: rotate(-90deg);
-  /* transform-origin: top ; */
+margin-top: 480px;
+
+}
+.social-item:not(:last-child) {
+  margin-right: 40px;
+}
+
+
+.social-list-footer {
+  display: flex;
+
+}
+.social-item:hover {
+  color: var(--accent-color);
+
+}
+.instagram-link::before {
+  content: "";
+  display: inline-block;
+  width: 60px;
+  height: 1px;
+  margin-right: 20px;
+  background-color: var(--lighte-text-color);
+
+}
+
+.instagram-link::before:hover {
+  background-color: var(--accent-color);
 }
 /* ABOUT SECTION-------------------- */
 .flex-about{
@@ -218,7 +246,7 @@ flex-grow:1;
 .contact-telephon-link:focus {
   color: var(--accent-color);
 }
-.social-item,
+.social-link,
 .youtube-link {
   font-family: Open Sans;
   font-style: normal;
@@ -227,8 +255,8 @@ flex-grow:1;
   line-height: 1.4;
   color: var(--lighte-text-color);
 }
-.social-item:hover,
-.social-item:focus {
+.social-link:hover,
+.social-link:focus {
   color: var(--accent-color);
 }
 .youtube-link:hover,
@@ -514,11 +542,6 @@ margin-bottom: 20px;
 }
  
 
-/* .contact-forms-container {
-  margin-bottom: 66px;
-} */
-
-
 .second-footer {
  display: flex;
  justify-content: space-between;
@@ -528,9 +551,9 @@ margin-bottom: 20px;
 }
 .social-list-footer {
   display: flex;
-  /* justify-content: space-between; */
+ 
 }
-.social-item::before {
+.instagram-link::before {
   content: "";
       display: inline-block;
         width: 60px;
@@ -539,6 +562,7 @@ margin-bottom: 20px;
         background-color: var(--lighte-text-color);
    
 }
-.social-item::before:hover {
+
+.instagram-link::before:hover {
   background-color: var(--accent-color);
 }
