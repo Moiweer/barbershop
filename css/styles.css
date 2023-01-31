@@ -681,7 +681,10 @@ transform: translate(-30%, -50%);
 .navigation-link-modal:focus {
   color: var(--accent-color);
 }
+
 .social-list-modal{
+  width: 192px;
+  margin: auto;
   margin-top: 64px ;
   display: flex;
   flex-direction: column;
